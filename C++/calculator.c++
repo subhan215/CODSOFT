@@ -1,6 +1,7 @@
 #include <iostream>
 #include <cstdlib>
 #include <string>
+#include <conio.h>
 void checkNumber(std::string *s)
 {
     bool check = true;
@@ -57,6 +58,11 @@ int main()
             {
                 break;
             }
+        }
+        if(choice == 5) {
+            std::cout <<"\nPress any key to continue...." ; 
+            getch() ; 
+            exit(1) ;
         }
         std::cout << "\nEnter number 1 : ";
         std::cin >> num1Str;
