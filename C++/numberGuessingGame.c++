@@ -2,6 +2,7 @@
 #include <cstdlib>
 #include <string>
 #include <time.h>
+#include <conio.h>
 void checkNumber(std::string *s)
 {
     bool check = true;
@@ -45,6 +46,8 @@ int main()
         if (numToGuess == guessNum)
         {
             std::cout << "\nCongratulations! You have guessed the correct number!!!...";
+            std::cout <<"\nPress any key to exit!" ; 
+            getch() ; 
             break;
         }
         if (guessNum > numToGuess)
